@@ -42,9 +42,9 @@ function Navbar({ userName }) {
   return (
     <div className="navbar">
       <ul className="navbar-list">
-        <li>{getLink("Home", "/home")}</li>
-        <li>{getLink("Problems", "/home/problems")}</li>
-        <li>{getLink("Aptitude", "/home/aptitude")}</li>
+        <li className="home">{getLink("Home", "/home")}</li>
+        <li className="problems">{getLink("Problems", "/home/problems")}</li>
+        <li className="aptitude">{getLink("Aptitude", "/home/aptitude")}</li>
         <li>
           <img
             src={themeImg}
