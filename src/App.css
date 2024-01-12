@@ -100,9 +100,9 @@ ul.navbar-list li a {
   border-bottom: 2px solid transparent;
 }
 
-ul.navbar-list li a:hover:not(.active-navbar-elements) {
+/*ul.navbar-list li a:hover:not(.active-navbar-elements) {
   border-bottom: 2px solid var(--border-color);
-}
+}*/
 
 .active-navbar-elements {
   border-bottom: 2px solid var(--tertiary-color);
@@ -986,3 +986,20 @@ textarea.overview {
     bottom: 8rem;
   }
 }
+
+/*updated css*/
+li.home,li.problems,li.aptitude{
+  border:solid 1px var(--primary-color);
+  padding:7px;
+  border-radius:20px;
+  
+}
+li.home:hover,li.problems:hover,li.aptitude:hover{
+  background-image:linear-gradient(114.44deg, #3644db 6.56%, #d15bb2 116.73%);
+}
+div.navbar{
+  position:sticky;
+  top:0;
+  z-index: 20;
+}
+
