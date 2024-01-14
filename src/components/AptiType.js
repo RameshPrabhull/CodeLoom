@@ -10,9 +10,10 @@ function AptiType({ type, updateCurrentType, updateCurrentCatagory }) {
           className="explorer-button"
           onClick={() => setClicked(!clicked)}
         >
-           <h3 id="cap"> {clicked ? <BiCaretDown />: <BiCaretRight />} {type.typeName}</h3>
+          {clicked ? <BiCaretDown/> : <BiCaretRight/>}
         </button>
-        </div>
+        <h2>{type.typeName}</h2>
+      </div>
       <div className="apti-catagory">
         {clicked
           ? type.catagory.map((cat, i) => {
