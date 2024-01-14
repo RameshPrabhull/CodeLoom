@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BiLinkExternal } from "react-icons/bi";
 function AptiCatagory({
   cat,
   typeName,
@@ -12,7 +12,7 @@ function AptiCatagory({
   };
   return (
     <div className="apti-categary-header" onClick={handleClick}>
-      <h3>{cat?.catagoryName}</h3>
+      <h3><BiLinkExternal /> {cat?.catagoryName}</h3>
     </div>
   );
 }

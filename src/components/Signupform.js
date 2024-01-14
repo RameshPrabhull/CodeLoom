@@ -67,6 +67,7 @@ function Signupform() {
           width="100px"
           height="80px"
           alt=""
+          className="namaste-image"
         ></img>
         <div className={`error-message ${error === "" ? "hide-message" : ""}`}>
           {error + " !!"}
