@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AptiCatagory from "./AptiCatagory";
-
+import { BiCaretDown,BiCaretRight } from "react-icons/bi";
 function AptiType({ type, updateCurrentType, updateCurrentCatagory }) {
   const [clicked, setClicked] = useState(false);
   return (
@@ -10,10 +10,9 @@ function AptiType({ type, updateCurrentType, updateCurrentCatagory }) {
           className="explorer-button"
           onClick={() => setClicked(!clicked)}
         >
-          {clicked ? "-" : "+"}
+           <h3 id="cap"> {clicked ? <BiCaretDown />: <BiCaretRight />} {type.typeName}</h3>
         </button>
-        <h2>{type.typeName}</h2>
-      </div>
+        </div>
       <div className="apti-catagory">
         {clicked
           ? type.catagory.map((cat, i) => {
