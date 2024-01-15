@@ -13,14 +13,13 @@ function Profile({ userName }) {
       <div>
         {logout && <Navigate to="/" replace={true} state={""}></Navigate>}
         <div
-          onClick={(e) => {
+          /*onClick={(e) => {
             document.getElementById("profile").classList.toggle("display-none");
-          }}
+          }}*/
           className="profile-icon-div"
         >
           <img src={profilSVG} alt="Profile" />
-        </div>
-        <div className="display-none drop-down-profile-info" id="profile">
+          <div className="display-none drop-down-profile-info" id="profile">
           <h3>{userName}</h3>
           <div
             className="log-out-profile"
@@ -32,6 +31,19 @@ function Profile({ userName }) {
             <img src={logoutSVG} alt="" />
           </div>
         </div>
+        </div>
+       {/* <div className="display-none drop-down-profile-info" id="profile">
+          <h3>{userName}</h3>
+          <div
+            className="log-out-profile"
+            onClick={(e) => {
+              handleLogOut();
+            }}
+          >
+            <div>log-out</div>
+            <img src={logoutSVG} alt="" />
+          </div>
+        </div>*/}
       </div>
     ) : (
       <Link to="/login" className="navabar-login">
