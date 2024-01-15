@@ -189,6 +189,7 @@ div.log-out-profile > img {
   justify-content: center;
   align-items: center;
   background-color: var(--home-exp-bg);
+  margin-bottom:0px;
 }
 
 button:hover,
@@ -1001,6 +1002,9 @@ div.navbar{
   position:sticky;
   top:0;
   z-index: 20;
+}
+.problemSet{
+  height:90vh;
 }
 
 

@@ -3,6 +3,8 @@ import { AptitudeTree } from "../structures/aptitudeTree";
 import AptiType from "../components/AptiType";
 import AptiQuestion from "../components/AptiQuestion";
 import "../css/apti.css";
+import Footer from "../components/Footer";
+
 const FETCH_BASE_URI =
   process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:5000";
 const getAptiQuestions = async (type, catagory) => {
@@ -97,10 +99,22 @@ function Aptitude() {
               Next
             </button>
           ) : (
-            ""
+            <div className="no-question-selected">
+            <h1>Welcome to our Aptitude Test Page!</h1><br></br>
+            <p>We're delighted to have you here as you embark on the journey of exploring and assessing your 
+            skills and abilities. This Aptitude Test is designed to help you uncover your strengths, identify 
+            areas for improvement, and showcase your potential.</p>
+            <div className="apti-wel">
+            <p>Happy testing!</p>
+           
+            </div>
+            </div>
           )}
+          
         </div>
+
       </div>
+          <Footer/>
     </div>
   );
 }

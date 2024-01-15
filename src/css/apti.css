@@ -26,8 +26,9 @@
 .explorer-button {
   background: transparent;
   border: none;
-  color: white;
-  font-size: 30px;
+  color: var(--font-color);
+  text-transform: capitalize;
+  font-weight: 100;
 }
 
 .apti-categary-header {
@@ -38,6 +39,7 @@
 }
 .apti-categary-header:hover {
   background-color: #ffffff33;
+  cursor: pointer;
 }
 
 .apti-vs-container {
@@ -45,12 +47,11 @@
   gap: 2%;
 }
 .apti-question-container {
-  margin-left: 5px;
-  margin-right: 5px;
+  flex:1;;
   border: 1px solid #555;
-  flex: 1;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
-
 @keyframes slow-drop-down {
   0% {
     height: 0;
@@ -62,9 +63,10 @@
 
 .apti-question {
   padding: 5%;
-  display: flex;
-  flex-direction: column;
+  display:block;
   gap: 20px;
+  background-color: var(--primary-color);
+  
 }
 
 .apti-option-container {
@@ -103,6 +105,16 @@ button.fixed-right-bottom {
   border-radius: 5px;
   /* border: none; */
 }
-#cap{
-  text-transform: capitalize;
-}
+
+
+ /*updates*/
+ .no-question-selected{
+  padding: 5%;
+  display:block;
+  gap: 20px;
+  height:630.600px; 
+  color:var(--font-color);
+ }
+ .apti-wel p{
+  margin-top:100px;
+ }

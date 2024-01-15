@@ -24,6 +24,8 @@ function AptiQuestion({ question, number }) {
   }, [question]);
 
   return question ? (
+    <div>
+    <div className="apti-question-outer"></div>
     <div className="apti-question">
       <h2>
         {number >= 0 ? number + 1 : "#"}. {question?.title}
@@ -77,6 +79,7 @@ function AptiQuestion({ question, number }) {
           ""
         )}
       </div>
+    </div>
     </div>
   ) : (
     <></>

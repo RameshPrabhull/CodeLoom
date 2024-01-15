@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Question from "../components/Question";
+import Footer from "../components/Footer";
+
 const FETCH_BASE_URI =
   process.env.REACT_APP_FETCH_BASE_URL || "http://localhost:3000";
 async function getAllProblems(token) {
@@ -59,7 +61,7 @@ function Problems({ token }) {
   }, [sortFactor, allProblems]);
 
   return (
-    <div>
+    <div className="problem-outer">
       <div className="problemSet">
         <div className="problemset-table-titles">
           <div>Number</div>
@@ -95,7 +97,11 @@ function Problems({ token }) {
           </div>
         )}
       </div>
+      <div>
+        <Footer/>
+      </div>
     </div>
+    
   );
 }
 
